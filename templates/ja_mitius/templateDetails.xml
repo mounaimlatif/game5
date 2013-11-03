@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+	version="2.5"
+	type="template"
+	method="upgrade" client="site">
+	<name>ja_mitius</name>
+	<version>1.0.0b</version>
+	<creationDate>05 February 2013</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.joomlart.com</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<group>t3</group>
+	<description>	
+	<![CDATA[&nbsp;&nbsp;<a target="_blank" href="http://bigtheme.net/">bigtheme.net</a>&nbsp;&nbsp;<br/>
+    <p>A refresh in look and feel for your online gaming website. <strong>JA Mitius</strong> is designed with bold blocks, uses dark tone of color and constract colors in order to create highlight effect for text and headlines.</p>
+	
+	<p>Built upon the latest version of T3 framework, <strong>JA Mitius</strong> is fully responsive and compatible with both Joomla! 2.5 & 3.0. The template supports K2 component and multi-style. Kunena forum will be supported and updated in upcoming release version of the template. The hit for this Joomla template is that the template supports Megamenu. This new feature is going to be released for T3 in the upcoming version. With an intuitive configuration visualization you can setup an advanced menu.</p>
+	
+	<p><strong>JA Mitius</strong> is truly a choice for your gaming website.</p>
+
+	<p><i><strong>Note:</strong> JA Mitius does not support RTL language.</i></p>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateInfo.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.tpl_ja_mitius.ini</language>
+		<language tag="en-GB">en-GB.tpl_ja_mitius.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>top-menu</position>
+		<position>top-login</position>
+		<position>top-newsticker</position>
+		<position>head-search</position>
+		<position>social</position>
+		<position>slideshow</position>
+		<position>slidenews</position>
+		<position>position-1</position>
+		<position>message</position>
+		<position>position-7</position>
+		<position>position-5</position>
+		<position>mast-col</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>navhelper</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footermenu</position>
+		<position>footer</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/jaT3/includes/depend">
+
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="jadepend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+			
+		</fields>
+		
+		<!-- Sample for add or disable configuration variable -->
+		<fields name="thememagic" addfieldpath="/plugins/system/jaT3/includes/depend">
+
+      <fieldset name="scaffolding_params" label="T3_TM_SCAFFOLDING">        
+        <field name="bodyBackground" type="color" default="" label="T3_TM_VARS_BODY_BKG_LABEL" description="T3_TM_VARS_BODY_BKG_DESC" />
+        <field name="textColor" type="color" default="" label="T3_TM_VARS_TEXT_COLOR_LABEL" description="T3_TM_VARS_TEXT_COLOR_DESC" />
+        <field name="linkColor" type="color" default="" label="T3_TM_VARS_LINK_COLOR_LABEL" description="T3_TM_VARS_LINK_COLOR_DESC" />
+      </fieldset>
+      <fieldset name="visual_params" label="T3_TM_VISUAL">
+
+        <field name="inputBorderRadius" type="text" default="0px" class="input-tiny" 
+          label="T3_TM_VARS_ELEMENT_RADIUS_LABEL" 
+          description="T3_TM_VARS_ELEMENT_RADIUS_DESC" />
+
+        <field name="T3NavbarInverted" type="radio" class="btn-group" default="0"
+          label="T3_TM_VARS_NAVBAR_INVERTED_LABEL"
+          description="T3_TM_VARS_NAVBAR_INVERTED_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+
+        <field name="T3SpotlightsInverted" type="radio" class="btn-group" default="0"
+          label="T3_TM_VARS_SPOTLIGHT_INVERTED_LABEL"
+          description="T3_TM_VARS_SPOTLIGHT_INVERTED_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>        
+      </fieldset>
+
+      <fieldset name="module_params" label="T3_TM_MODULE">
+        <field name="T3moduleBackground" type="color" default="" label="T3_TM_VARS_MODULE_BGCOLOR_LABEL" description="T3_TM_VARS_MODULE_BGCOLOR_DESC" />
+        <field name="T3moduleColor" type="color" default="" label="T3_TM_VARS_MODULE_COLOR_LABEL" description="T3_TM_VARS_MODULE_COLOR_DESC" />
+        <field name="T3moduleTitleBackground" type="color" default="" label="T3_TM_VARS_MODULE_TITLE_BGCOLOR_LABEL" description="T3_TM_VARS_MODULE_TITLE_BGCOLOR_DESC" />
+        <field name="T3moduleTitleColor" type="color" default="" label="T3_TM_VARS_MODULE_TITLE_COLOR_LABEL" description="T3_TM_VARS_MODULE_TITLE_COLOR_DESC" />
+      </fieldset>
+
+      <fieldset name="typo_params" label="T3_TM_TYPO">
+        <field name="typo_params_default" type="jadepend" function="@group">
+          <option for="baseFontFamily" value="-1">baseFontFamily_custom</option>
+          <option for="headingsFontFamily" value="-1">headingsFontFamily_custom</option>
+        </field>
+
+        <field name="baseFontSize" type="text" default="14px" size="10" class="input-tiny" 
+          label="T3_TM_VARS_FONTSIZE_LABEL"
+          description="T3_TM_VARS_FONTSIZE_DESC" />
+
+        <field name="baseFontFamily" type="list" default="sans-serif" 
+          label="T3_TM_VARS_FONTFAMILY_LABEL" 
+          description="T3_TM_VARS_FONTFAMILY_DESC" >
+          <option value="serif">T3_TM_VARS_FONTFAMILY_SERIF</option>
+          <option value="sans-serif">T3_TM_VARS_FONTFAMILY_SANS_SERIF</option>
+          <option value="monospace">T3_TM_VARS_FONTFAMILY_MONOSPACE</option>
+          <option value="-1">T3_TM_VARS_FONTFAMILY_CUSTOM</option>  
+        </field>
+        <field name="baseFontFamily_custom" type="text" default="sans-serif"  size="30"
+          label="T3_TM_VARS_FONTFAMILY_CUSTOM_LABEL"
+          description="T3_TM_VARS_FONTFAMILY_CUSTOM_DESC" />
+
+        <field name="headingsFontFamily" type="list" default="sans-serif"
+          label="T3_TM_VARS_HEADINGFONTFAMILY_LABEL" 
+          description="T3_TM_VARS_HEADINGFONTFAMILY_DESC" >
+          <option value="serif">T3_TM_VARS_FONTFAMILY_SERIF</option>
+          <option value="sans-serif">T3_TM_VARS_FONTFAMILY_SANS_SERIF</option>
+          <option value="monospace">T3_TM_VARS_FONTFAMILY_MONOSPACE</option>
+          <option value="-1">T3_TM_VARS_FONTFAMILY_CUSTOM</option>  
+        </field>
+        <field name="headingsFontFamily_custom" type="text" default="sans-serif"  size="30"
+          label="T3_TM_VARS_FONTFAMILY_CUSTOM_LABEL"
+          description="T3_TM_VARS_FONTFAMILY_CUSTOM_DESC" />
+
+      </fieldset>
+			<fieldset name="links_params" label="T3_THEMER_FOOTER">
+				<field name="T3FooterModuleTitleColor" type="color" default="" label="T3_VARS_FOOTER_MOD_TCOLOR_LABEL" description="T3_VARS_FOOTER_MOD_TCOLOR_DESC" />
+				<field name="T3FooterModuleColor" type="color" default="" label="T3_VARS_FOOTER_MOD_COLOR_LABEL" description="T3_VARS_FOOTER_MOD_COLOR_DESC" />
+			</fieldset>
+		</fields>
+    </config>
+
+	<updateservers>
+	   <server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>	
+
+</extension>

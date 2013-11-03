@@ -1,0 +1,152 @@
+//
+// TABLET
+// -------------------------------------------------------------
+@media  (max-width: 1199px) {
+
+  // Head Search
+  // ------------------------------------------------------
+  .head-search .input,
+  .head-search .input:focus,
+  .head-search .input:hover,
+  .head-search .input:active  {
+    width: 100px;
+  }
+
+  // Joomla Page
+  // -----------------
+
+  // JA Content Popup
+  // -----------------
+
+  .t3-module .ja-cp-main .ja-cp-group .ja-cp-item,
+  .t3-module .ja-cp-main .ja-cp-group .ja-cp-item {
+    overflow: hidden;
+    width: 20% !important;
+  }
+
+  .t3-module .ja-cp-main .item-inner {
+    width: 80% !important;
+  }
+
+  // JA Content Slider
+  // -----------------
+  .ja-contentslider-center,
+  .ja-contentslider-center .jsslide{
+    width: 100% !important; 
+  }
+
+  .ja-contentslider-center .jsslide {
+    height: auto !important;
+  }
+
+  // ACymailling Mail
+  // -----------------
+
+  div.acymailing_form p.onefield {
+    width: 100% !important;
+  }
+
+  .acymailing_form .acyfield_email input.inputbox {
+    width: 90% !important;
+  }
+
+  .highslide-img a {
+    width: 66px !important; 
+    height: 66px !important;
+  }
+
+  // K2
+  // ------------------------------------------------------
+
+
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  // Head Search
+  // ------------------------------------------------------
+  .head-search .input,
+  .head-search .input:focus,
+  .head-search .input:hover,
+  .head-search .input:active  {
+    width: 60px;
+  }
+
+  // Module
+  // -----------------
+  .module-title {
+    font-size: 13px;
+  }
+
+  // JA Content Slider
+  // -----------------
+  .ja-button-control {
+    margin-bottom: 15px;
+    position: relative !important;
+    top: 0 !important;
+  }
+}
+//
+// MOBILE
+// -------------------------------------------------------------
+@media (max-width: 767px) {
+
+  /* HEADER
+  --------------------------------------------------------- */
+  /* Logo ---*/
+  .logo { float: none; text-align: center; }
+
+  /* Head Search --- */
+  .head-search {
+    float: none;
+    margin-top: @baseLineHeight;
+  }
+
+  .head-search .input {
+    width: 100%;
+    .box-sizing(border-box);
+    height: 30px;
+  }
+
+  /* focus state */
+  .head-search .input:focus {
+    width: 100%;
+  }
+
+  .ja-tab-subcontent .ja-slidenews-item {
+    width: 100%;
+  }
+
+  /* FOOTER
+  --------------------------------------------------------- */
+  .ja-footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  /* Footnav ---*/
+  .ja-footnav {
+    padding: @baseLineHeight 20px 0;
+    font-size: @T3smallerFontSize;
+  }
+
+  .ja-footnav .module-title {
+    font-size: @baseFontSize;
+    font-weight: bold;
+  }
+
+  /* Copyright ---*/
+  .ja-copyright {
+    padding: @baseLineHeight 20px (@baseLineHeight * 2);
+    .clearfix();
+  }
+
+  .copyright,
+  .poweredby {
+    float: none;
+    display: inline-block;
+  }
+
+  .poweredby {
+    margin-top: @baseLineHeight / 2;
+  }
+
+}

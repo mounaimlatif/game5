@@ -1,0 +1,98 @@
+.ja-countdown {
+	width:960px;
+	margin:0 auto;
+	background-color:#68bdda;
+	overflow:hidden;
+}
+
+.ja-countdown h1 {
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size:30px;
+    text-align: center;
+    margin-top:200px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #5295ac;
+       
+}
+.ja-countdown h4 {
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size:18px;
+    text-align: center;
+    margin-top:10px;
+    font-weight: normal;
+	text-shadow: 1px 1px 1px #5295ac;
+}
+
+.ja-countdown .clock {
+    width:535px;
+    margin:0 auto;
+}
+
+.ja-countdown .clock_days {
+    float:left;
+    width:122px;
+    margin-right: 15px;
+    position: relative;
+}
+.ja-countdown .clock_hours {
+    float:left;
+    width:122px;
+    margin-right: 15px;
+    position: relative;
+}
+.ja-countdown .clock_minutes {
+    float:left;
+    width:122px;
+    margin-right: 15px;
+    position: relative;
+}
+.ja-countdown .clock_seconds {
+    float:left;
+    width:122px;
+    position: relative;
+}
+
+.ja-countdown .bgLayer {
+    background-image:url("../img/clock_bg.png");
+    width:122px;
+    height:122px;
+    background-repeat: no-repeat;
+}
+
+.ja-countdown .val {
+    margin:0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    line-height: 122px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color:#FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #5295ac;
+    text-align: center;
+}
+
+.ja-countdown .type_days,
+.ja-countdown .type_hours,
+.ja-countdown .type_minutes,
+.ja-countdown .type_seconds {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#FFF;
+    background:#64b5d1;
+    padding:5px;
+    text-align: center;
+    margin:0 auto;
+    margin-top:10px;
+    display: table;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #5295ac;
+}
